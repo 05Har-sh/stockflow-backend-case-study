@@ -1,5 +1,10 @@
 # StockFlow Backend Case Study
 
+## 📄 Case Study Document
+
+Full detailed solution (Part 1, 2, 3) is available here:  
+https://docs.google.com/document/d/1U0wTot2Fawwb2Ph03snnUfW9wSQ3XNDGdQVRq64SSKY/edit?usp=sharing
+
 ##  Overview
 This project is a backend implementation for **StockFlow**, a B2B inventory management system.  
 It focuses on designing a scalable backend to manage products across multiple warehouses and provides a **Low Stock Alert API** to help businesses restock efficiently.
