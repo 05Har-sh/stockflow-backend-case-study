@@ -56,3 +56,40 @@ Key entities:
 
 ```http
 GET /api/companies/{company_id}/alerts/low-stock
+```
+
+Sample Response
+```http
+{
+  "alerts": [
+    {
+      "product_id": 1,
+      "product_name": "Laptop",
+      "sku": "LP-123",
+      "warehouse_id": 101,
+      "warehouse_name": "Pune Warehouse",
+      "current_stock": 5,
+      "threshold": 10,
+      "days_until_stockout": 0,
+      "supplier": {
+        "id": 1,
+        "name": "ABC Supplier",
+        "contact_email": "abc@email.com"
+      }
+    }
+  ],
+  "total_alerts": 1
+}
+
+```
+🧠 Approach
+- Fetch warehouses for a company
+- Retrieve inventory for each warehouse
+- Identify products below threshold
+- Fetch supplier details
+- Return structured alert response
+
+⚠️ Assumptions
+- Fixed stock threshold is used (for simplicity)
+- Each product has one primary supplier
+
